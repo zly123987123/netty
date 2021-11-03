@@ -179,7 +179,7 @@
       <properties>
         <skipNativeImageTestsuite>false</skipNativeImageTestsuite>
         <forbiddenapis.skip>true</forbiddenapis.skip>
-        <testJvm />
+        <testJvm/>
       </properties>
     </profile>
     <profile>
@@ -189,8 +189,8 @@
       </activation>
       <properties>
         <!-- Not use alpn agent as Java11+ supports alpn out of the box -->
-        <argLine.alpnAgent />
-        <argLine.java9.extras />
+        <argLine.alpnAgent/>
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny ${argLine.java9.extras}</argLine.java9>
         <forbiddenapis.skip>true</forbiddenapis.skip>
@@ -214,8 +214,8 @@
       </activation>
       <properties>
         <!-- Not use alpn agent as Java11+ supports alpn out of the box -->
-        <argLine.alpnAgent />
-        <argLine.java9.extras />
+        <argLine.alpnAgent/>
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny ${argLine.java9.extras}</argLine.java9>
         <forbiddenapis.skip>true</forbiddenapis.skip>
@@ -238,11 +238,11 @@
         <jdk>15</jdk>
       </activation>
       <properties>
-        <argLine.java9.extras />
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny ${argLine.java9.extras}</argLine.java9>
         <!-- Not use alpn agent as Java11+ supports alpn out of the box -->
-        <argLine.alpnAgent />
+        <argLine.alpnAgent/>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- Needed because of https://issues.apache.org/jira/browse/MENFORCER-275 -->
         <enforcer.plugin.version>3.0.0-M3</enforcer.plugin.version>
@@ -262,11 +262,11 @@
         <jdk>14</jdk>
       </activation>
       <properties>
-        <argLine.java9.extras />
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny ${argLine.java9.extras}</argLine.java9>
         <!-- Not use alpn agent as Java11+ supports alpn out of the box -->
-        <argLine.alpnAgent />
+        <argLine.alpnAgent/>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- Needed because of https://issues.apache.org/jira/browse/MENFORCER-275 -->
         <enforcer.plugin.version>3.0.0-M3</enforcer.plugin.version>
@@ -286,11 +286,11 @@
         <jdk>13</jdk>
       </activation>
       <properties>
-        <argLine.java9.extras />
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny ${argLine.java9.extras}</argLine.java9>
         <!-- Not use alpn agent as Java11+ supports alpn out of the box -->
-        <argLine.alpnAgent />
+        <argLine.alpnAgent/>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- Needed because of https://issues.apache.org/jira/browse/MENFORCER-275 -->
         <enforcer.plugin.version>3.0.0-M3</enforcer.plugin.version>
@@ -311,11 +311,11 @@
         <jdk>12</jdk>
       </activation>
       <properties>
-        <argLine.java9.extras />
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny ${argLine.java9.extras}</argLine.java9>
         <!-- Not use alpn agent as Java11+ supports alpn out of the box -->
-        <argLine.alpnAgent />
+        <argLine.alpnAgent/>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- Needed because of https://issues.apache.org/jira/browse/MENFORCER-275 -->
         <enforcer.plugin.version>3.0.0-M3</enforcer.plugin.version>
@@ -336,11 +336,11 @@
         <jdk>11</jdk>
       </activation>
       <properties>
-        <argLine.java9.extras />
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny ${argLine.java9.extras}</argLine.java9>
         <!-- Not use alpn agent as Java11+ supports alpn out of the box -->
-        <argLine.alpnAgent />
+        <argLine.alpnAgent/>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- Needed because of https://issues.apache.org/jira/browse/MENFORCER-275 -->
         <enforcer.plugin.version>3.0.0-M3</enforcer.plugin.version>
@@ -358,11 +358,11 @@
         <jdk>10</jdk>
       </activation>
       <properties>
-        <argLine.java9.extras />
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny --add-modules java.xml.bind ${argLine.java9.extras}</argLine.java9>
         <!-- Not use alpn agent as Java10 supports alpn out of the box -->
-        <argLine.alpnAgent />
+        <argLine.alpnAgent/>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- Needed because of https://issues.apache.org/jira/browse/MENFORCER-275 -->
         <enforcer.plugin.version>3.0.0-M3</enforcer.plugin.version>
@@ -375,11 +375,11 @@
     <profile>
       <id>java9</id>
       <properties>
-        <argLine.java9.extras />
+        <argLine.java9.extras/>
         <!-- Export some stuff which is used during our tests -->
         <argLine.java9>--illegal-access=deny --add-modules java.xml.bind ${argLine.java9.extras}</argLine.java9>
         <!-- Not use alpn agent as Java9 supports alpn out of the box -->
-        <argLine.alpnAgent />
+        <argLine.alpnAgent/>
         <!-- Skip as maven plugin not works with Java9 yet -->
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <!-- Needed because of https://issues.apache.org/jira/browse/MENFORCER-275 -->
@@ -403,7 +403,7 @@
       </activation>
       <properties>
         <tcnative.artifactId>netty-tcnative-boringssl-static</tcnative.artifactId>
-        <tcnative.classifier />
+        <tcnative.classifier/>
       </properties>
     </profile>
     <profile>
@@ -500,7 +500,7 @@
     <argLine.noUnsafe>-D_</argLine.noUnsafe> <!-- Overridden when 'noUnsafe' profile is active -->
     <argLine.coverage>-D_</argLine.coverage> <!-- Overridden when 'coverage' profile is active -->
     <argLine.printGC>-XX:+PrintGCDetails</argLine.printGC>
-    <argLine.java9 /> <!-- Overridden when 'java9' profile is active -->
+    <argLine.java9/> <!-- Overridden when 'java9' profile is active -->
     <argLine.javaProperties>-D_</argLine.javaProperties>
     <!-- Configure the os-maven-plugin extension to expand the classifier on                  -->
     <!-- Fedora-"like" systems. This is currently only used for the netty-tcnative dependency -->
@@ -514,7 +514,7 @@
     <conscrypt.groupId>org.conscrypt</conscrypt.groupId>
     <conscrypt.artifactId>conscrypt-openjdk-uber</conscrypt.artifactId>
     <conscrypt.version>2.5.2</conscrypt.version>
-    <conscrypt.classifier />
+    <conscrypt.classifier/>
     <jni.classifier>${os.detected.name}-${os.detected.arch}</jni.classifier>
     <logging.config>${project.basedir}/../common/src/test/resources/logback-test.xml</logging.config>
     <logging.logLevel>debug</logging.logLevel>
@@ -917,7 +917,7 @@
       <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
-        <version>2.7</version>
+        <version>2.8.9</version>
         <scope>test</scope>
       </dependency>
 
@@ -1399,39 +1399,39 @@
             </goals>
             <configuration>
               <target>
-                <taskdef resource="net/sf/antcontrib/antlib.xml" />
+                <taskdef resource="net/sf/antcontrib/antlib.xml"/>
 
                 <!-- Get the information about the latest commit -->
                 <exec executable="git" outputproperty="gitOutput.lastCommit" resultproperty="gitExitCode.lastCommit" failonerror="false" failifexecutionfails="false">
-                  <arg value="log" />
-                  <arg value="-1" />
-                  <arg value="--format=format:%h %H %cd" />
-                  <arg value="--date=iso" />
+                  <arg value="log"/>
+                  <arg value="-1"/>
+                  <arg value="--format=format:%h %H %cd"/>
+                  <arg value="--date=iso"/>
                 </exec>
-                <propertyregex property="shortCommitHash" input="${gitOutput.lastCommit}" regexp="^([0-9a-f]+) .*$" select="\1" casesensitive="true" defaultValue="0" />
-                <propertyregex property="longCommitHash" input="${gitOutput.lastCommit}" regexp="^[0-9a-f]+ ([0-9a-f]{40}) .*$" select="\1" casesensitive="true" defaultValue="0000000000000000000000000000000000000000" />
-                <propertyregex property="commitDate" input="${gitOutput.lastCommit}" regexp="^[0-9a-f]+ [0-9a-f]{40} (.*)$" select="\1" casesensitive="true" defaultValue="1970-01-01 00:00:00 +0000" />
+                <propertyregex property="shortCommitHash" input="${gitOutput.lastCommit}" regexp="^([0-9a-f]+) .*$" select="\1" casesensitive="true" defaultValue="0"/>
+                <propertyregex property="longCommitHash" input="${gitOutput.lastCommit}" regexp="^[0-9a-f]+ ([0-9a-f]{40}) .*$" select="\1" casesensitive="true" defaultValue="0000000000000000000000000000000000000000"/>
+                <propertyregex property="commitDate" input="${gitOutput.lastCommit}" regexp="^[0-9a-f]+ [0-9a-f]{40} (.*)$" select="\1" casesensitive="true" defaultValue="1970-01-01 00:00:00 +0000"/>
 
                 <!-- Get the information abount whether the repository is clean or dirty -->
                 <exec executable="git" outputproperty="gitOutput.repoStatus" resultproperty="gitExitCode.repoStatus" failonerror="false" failifexecutionfails="false">
-                  <arg value="status" />
-                  <arg value="--porcelain" />
+                  <arg value="status"/>
+                  <arg value="--porcelain"/>
                 </exec>
                 <if>
-                  <equals arg2="0" arg1="${gitExitCode.repoStatus}" />
+                  <equals arg2="0" arg1="${gitExitCode.repoStatus}"/>
                   <then>
                     <if>
-                      <equals arg2="" arg1="${gitOutput.repoStatus}" />
+                      <equals arg2="" arg1="${gitOutput.repoStatus}"/>
                       <then>
-                        <property name="repoStatus" value="clean" />
+                        <property name="repoStatus" value="clean"/>
                       </then>
                       <else>
-                        <property name="repoStatus" value="dirty" />
+                        <property name="repoStatus" value="dirty"/>
                       </else>
                     </if>
                   </then>
                   <else>
-                    <property name="repoStatus" value="unknown" />
+                    <property name="repoStatus" value="unknown"/>
                   </else>
                 </if>
 
@@ -1442,18 +1442,18 @@
                 <!--
                 <property name="metaInfDir" value="${project.basedir}/src/main/resources/META-INF" />
                 -->
-                <property name="metaInfDir" value="${project.build.outputDirectory}/META-INF" />
-                <property name="versionPropFile" value="${metaInfDir}/${project.groupId}.versions.properties" />
-                <mkdir dir="${metaInfDir}" />
-                <delete file="${versionPropFile}" quiet="true" />
+                <property name="metaInfDir" value="${project.build.outputDirectory}/META-INF"/>
+                <property name="versionPropFile" value="${metaInfDir}/${project.groupId}.versions.properties"/>
+                <mkdir dir="${metaInfDir}"/>
+                <delete file="${versionPropFile}" quiet="true"/>
 
                 <propertyfile file="${versionPropFile}" comment="Generated by netty-parent/pom.xml">
-                  <entry key="${project.artifactId}.version" value="${project.version}" />
-                  <entry key="${project.artifactId}.buildDate" type="date" value="now" pattern="yyyy-MM-dd HH:mm:ss Z" />
-                  <entry key="${project.artifactId}.commitDate" value="${commitDate}" />
-                  <entry key="${project.artifactId}.shortCommitHash" value="${shortCommitHash}" />
-                  <entry key="${project.artifactId}.longCommitHash" value="${longCommitHash}" />
-                  <entry key="${project.artifactId}.repoStatus" value="${repoStatus}" />
+                  <entry key="${project.artifactId}.version" value="${project.version}"/>
+                  <entry key="${project.artifactId}.buildDate" type="date" value="now" pattern="yyyy-MM-dd HH:mm:ss Z"/>
+                  <entry key="${project.artifactId}.commitDate" value="${commitDate}"/>
+                  <entry key="${project.artifactId}.shortCommitHash" value="${shortCommitHash}"/>
+                  <entry key="${project.artifactId}.longCommitHash" value="${longCommitHash}"/>
+                  <entry key="${project.artifactId}.repoStatus" value="${repoStatus}"/>
                 </propertyfile>
               </target>
             </configuration>
@@ -1615,7 +1615,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -1628,7 +1628,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -1641,7 +1641,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -1654,7 +1654,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -1667,7 +1667,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -1681,7 +1681,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -1696,7 +1696,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
